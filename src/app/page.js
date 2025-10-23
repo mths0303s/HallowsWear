@@ -52,7 +52,7 @@ export default function SpookyStore() {
     <>
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <div className={styles.logo}>🎃 Spooky Store</div>
+          <div className={styles.logo}>🎃 Hallows Wear</div>
           <ul className={styles["nav-links"]}>
             <li>
               <a href="#home">Home</a>
@@ -71,7 +71,7 @@ export default function SpookyStore() {
       </header>
 
       <section id="home" className={styles.hero}>
-        <h1>👻 Spooky Halloween Store 👻</h1>
+        <h1>👻 Hallows Wear Store 👻</h1>
         <p>Find the Perfect Costume and Masks for Halloween Night!</p>
       </section>
 
@@ -243,7 +243,7 @@ export default function SpookyStore() {
                   </p>
                   <p>Please use the PIX key below to complete your payment:</p>
                   <div className={styles["pix-key"]}>
-                    your-pix-key@email.com
+                    Shaolin-matador777@etec.sp.gov.br
                   </div>
                   <p style={{ marginTop: "1rem", color: "#aaa" }}>
                     After payment, send proof to our WhatsApp!
@@ -257,7 +257,7 @@ export default function SpookyStore() {
 
       <footer className={styles.footer}>
         <p>
-          © 2024 Spooky Store - All Rights Reserved | Have a Spooktacular
+          © 2024 Hallows Wear - All Rights Reserved | Have a Spooktacular
           Halloween! 🎃👻
         </p>
       </footer>
