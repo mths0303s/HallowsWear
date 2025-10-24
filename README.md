@@ -1,6 +1,6 @@
 # HallowsWear
 
-Site de ecommerce de fantasias de halloween
+Site de ecommerce de fantasias de halloween.
 
 ## Instruções de Uso
 
