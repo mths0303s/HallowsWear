@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 import styles from "./page.module.css";
 import products from "./products.json";
-import logo from "./images/logo.svg";
 
 export default function SpookyStore() {
   const [cart, setCart] = useState([]);
@@ -54,9 +52,7 @@ export default function SpookyStore() {
     <>
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <div className={styles.logo}>
-            <Image src={logo} /> Hallows Wear
-          </div>
+          <div className={styles.logo}>🎃 Hallows Wear</div>
           <ul className={styles["nav-links"]}>
             <li>
               <a href="#home">Home</a>
@@ -109,7 +105,6 @@ export default function SpookyStore() {
 
       <section id="about" className={styles["about-section"]}>
         <div className={styles["about-content"]}>
-          <Image src={logo} />
           <h2
             style={{
               textAlign: "center",
@@ -117,7 +112,7 @@ export default function SpookyStore() {
               marginBottom: "2rem",
             }}
           >
-            About Halloween
+            🎃 About Halloween
           </h2>
 
           <h3>What is Halloween?</h3>
