@@ -3,84 +3,84 @@
     "id": 1,
     "name": "Vampire Costume",
     "price": 49.99,
-    "emoji": "🧛",
+    "image": "/images/products/vampire.png",
     "category": "costume"
   },
   {
     "id": 2,
     "name": "Witch Costume",
     "price": 44.99,
-    "emoji": "🧙",
+    "image": "/images/products/witch.png",
     "category": "costume"
   },
   {
     "id": 3,
     "name": "Ghost Costume",
     "price": 34.99,
-    "emoji": "👻",
+    "image": "/images/products/ghost.png",
     "category": "costume"
   },
   {
     "id": 4,
     "name": "Zombie Costume",
     "price": 54.99,
-    "emoji": "🧟",
+    "image": "/images/products/zombie.png",
     "category": "costume"
   },
   {
     "id": 5,
     "name": "Skeleton Mask",
     "price": 19.99,
-    "emoji": "💀",
+    "image": "/images/products/skeletonMask.png",
     "category": "mask"
   },
   {
     "id": 6,
     "name": "Pumpkin Mask",
     "price": 24.99,
-    "emoji": "🎃",
+    "image": "/images/products/pumpkinMask.png",
     "category": "mask"
   },
   {
     "id": 7,
-    "name": "Devil Mask",
+    "name": "Scream Mask",
     "price": 29.99,
-    "emoji": "😈",
+    "image": "/images/products/screamMask.png",
     "category": "mask"
   },
   {
     "id": 8,
     "name": "Monster Mask",
     "price": 27.99,
-    "emoji": "👹",
+    "image": "/images/products/monsterMask.png",
     "category": "mask"
   },
   {
     "id": 9,
     "name": "Werewolf Costume",
     "price": 59.99,
-    "emoji": "🐺",
+    "image": "/images/products/werewolf.png",
     "category": "costume"
   },
   {
     "id": 10,
     "name": "Mummy Costume",
     "price": 39.99,
-    "emoji": "🧻",
+    "image": "/images/products/mummy.png",
     "category": "costume"
   },
   {
     "id": 11,
     "name": "Clown Mask",
     "price": 22.99,
-    "emoji": "🤡",
+    "image": "/images/products/clownMask.png",
     "category": "mask"
   },
   {
     "id": 12,
     "name": "Alien Mask",
     "price": 32.99,
-    "emoji": "👽",
+    "image": "/images/products/alienMask.png",
     "category": "mask"
   }
 ]

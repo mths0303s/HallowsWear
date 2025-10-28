@@ -5,10 +5,11 @@ import { useState } from "react";
 import styles from "./page.module.css";
 import products from "./products.json";
 
-export default function SpookyStore() {
+export default function HallowsWear() {
   const [cart, setCart] = useState([]);
   const [showCartModal, setShowCartModal] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
+  const [menuAberto, setMenuAberto] = useState(false);
 
   const addToCart = (productId) => {
     const product = products.find((p) => p.id === productId);
@@ -52,18 +53,47 @@ export default function SpookyStore() {
     <>
       <header className={styles.header}>
         <nav className={styles.nav}>
-          <div className={styles.logo}>🎃 Hallows Wear</div>
-          <ul className={styles["nav-links"]}>
+          <div className={styles.logo}>
+            <img src="./favicon.ico" className={styles.logoImg} />
+            <span className={styles.logoSpan}>Hallows Wear</span>
+          </div>
+
+          {/* Botão hambúrguer */}
+          <button
+            className={`${styles.hamburger} ${
+              menuAberto ? styles.active : ""
+            }`}
+            onClick={() => setMenuAberto(!menuAberto)}
+            aria-label="Menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          {/* Links de navegação */}
+          <ul
+            className={`${styles["nav-links"]} ${
+              menuAberto ? styles["menuAtivo"] : ""
+            }`}
+          >
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" onClick={() => setMenuAberto(false)}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#products">Products</a>
+              <a href="#products" onClick={() => setMenuAberto(false)}>
+                Products
+              </a>
             </li>
             <li>
-              <a href="#about">About Halloween</a>
+              <a href="#about" onClick={() => setMenuAberto(false)}>
+                About Halloween
+              </a>
             </li>
           </ul>
+
           <button className={styles["cart-btn"]} onClick={toggleCart}>
             🛒 Cart <span className={styles["cart-count"]}>{totalItems}</span>
           </button>
@@ -80,7 +110,9 @@ export default function SpookyStore() {
         <div className={styles["products-grid"]}>
           {products.map((product) => (
             <div key={product.id} className={styles["product-card"]}>
-              <div className={styles["product-img"]}>{product.emoji}</div>
+              <div className={styles["product-img"]}>
+                <img src={product.image} alt={product.name} />
+              </div>
               <div className={styles["product-info"]}>
                 <h3>{product.name}</h3>
                 <p>
@@ -243,7 +275,7 @@ export default function SpookyStore() {
                   </p>
                   <p>Please use the PIX key below to complete your payment:</p>
                   <div className={styles["pix-key"]}>
-                    Shaolin-matador777@etec.sp.gov.br
+                    teste321@gmail.com
                   </div>
                   <p style={{ marginTop: "1rem", color: "#aaa" }}>
                     After payment, send proof to our WhatsApp!
@@ -257,7 +289,7 @@ export default function SpookyStore() {
 
       <footer className={styles.footer}>
         <p>
-          © 2024 Hallows Wear - All Rights Reserved | Have a Spooktacular
+          © 2025 Hallows Wear - All Rights Reserved | Have a Spooktacular
           Halloween! 🎃👻
         </p>
       </footer>

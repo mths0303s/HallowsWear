@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Spooky Store - Halloween Costumes & Masks",
+  title: "Hallows Wear - Halloween Costumes & Masks",
 };
 
 export default function RootLayout({ children }) {
